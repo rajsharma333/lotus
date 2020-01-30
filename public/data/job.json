@@ -1,0 +1,55 @@
+primary: {
+    title: 'Software Engineer',
+    department: 'Technology',
+    grade: 'M-1',
+    reporting_manager: 'Deepak Kumar',
+    hiring_manager: 'Charu Ahuja',
+    location: 'Gurgaon',
+    priority: 'High',
+    pos_type: 'Permanent',
+    contract_duration: '',
+  },
+  Skills: {
+    keywords: ['UI Developer', 'Fronted Developer', 'React.js'],
+    primarySkills: ['Javascript', 'CSS', 'React.js', 'Redux'],
+    secondarySkills: ['GIT', 'JIRA', 'AGILE'],
+    min_exp: '2 years'
+    max_exp: '5 years'
+    education: 'any Graduate'
+    joiningTime: '30-45 Days'
+    min_salary: '5Lac'
+    max_salary: '7Lac'
+  },
+  job_descriptio: {
+    summary: 'Job Summray'
+    about_job:' Job Details'
+    requirement: ' Job Requirements'
+  },
+  interview_process: [
+    {
+      step_name: 'Technical-1'
+      step_type:'Technical'
+      mode: 'Telecon'
+      panel: ''
+    }
+  ],
+  profiles: [
+    {
+      profile_id: ''
+      status: '',
+    }
+  ],
+  actions:{
+    posted_by: 'Neha Singh'
+    posted_on: 'July 19, 2019'
+    approved_by: 'Anish Nair'
+    approved_on: 'July 20, 2019'
+  },
+  status: ''
+  history: [
+    {
+      action_date: ''
+      action_type: ''
+      action_by: ''
+    }
+  ]

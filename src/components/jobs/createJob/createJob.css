@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+.single-col-form {
+  width:96%;
+  margin: 50px 2%;
+  background: #fff;
+  box-sizing: border-box;
+  padding:50px;
+  display: flex;
+  flex-direction: row;
+}
+.single-col-form .tabs {
+  display: inline-flex;
+  flex-direction: column;
+  width: 300px;
+  border-bottom: 0px;
+}
+.single-col-form .tabs a {
+  margin-bottom: 30px;
+}
+.single-col-form .tabs a.active {
+  font-size:30px;
+}
+.single-col-form .form {
+  display: inline-flex;
+  flex-direction: column;
+  width:800px;
+}
+.job-form input {
+  width:400px;
+  height:40px;
+  line-height: 40px;
+  border:1px solid #999;
+  padding:0 10px;
+  margin:15px
+}
+.job-form .divided input {
+  width:185px;
+  height:40px;
+  line-height: 40px;
+  border:1px solid #999;
+  padding:0 10px;
+  margin:15px
+}
+.job-form label {
+  display: inline-block;
+  width:150px;
+  text-align: left;
+}

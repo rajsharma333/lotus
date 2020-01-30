@@ -1,0 +1,61 @@
+.login-wrapper {
+  width:800px;
+  height:450px;
+  margin:100px auto;
+  box-shadow: 2px 2px 20px #e2e2e2;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+.login-wrapper h3 {
+  font-size: 28px;
+  font-weight: 100;
+  margin: 0 0 50px;
+}
+.login-wrapper .form-section button {
+  width:280px;
+}
+.form-section {
+  width: 50%;
+}
+.form-section input {
+  width:70%;
+  margin:20px auto;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  border:1px solid #ccc;
+  display: block;
+}
+.content-section {
+  width: 50%;
+  border-radius: 4px 0 0 4px;
+  background-image: linear-gradient(to bottom, #feb48d 40%, #f18b8e, #e97190);
+  color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  line-height: 200%;
+  text-transform: capitalize;
+/*  -webkit-animation-name: example;
+  -webkit-animation-duration: 4s;
+  animation-name: example;
+  animation-duration: 5s;*/
+  font-size: 20px;
+  flex-direction: column;
+}
+
+@keyframes example {
+  0%   {left:0%; top:0px;}
+  50% {left:50%; top:0px;}
+}
+.content-section > div {
+  margin: auto;
+}
+.d-none {
+  display: none;
+}
