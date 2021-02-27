@@ -1,25 +1,27 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import registerUser from '../../actions/auth';
+import axios from 'axios';
 
 const Register = ({ registerUser }) => {
-  const [userData, setUserData] = useState({
+  const [newUser, setNewUser] = useState({
       name: '',
       email: '',
       password: ''
   });
 
-  const { name, email, password } = userData;
+  const { name, email, password } = newUser;
 
   const handleChange = (e) => {
-    setUserData({...userData, [e.target.name]: e.target.value});
+    setNewUser({...newUser, [e.target.name]: e.target.value});
     //console.log(userData);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //console.log(userData);
+    console.log(newUser);
     registerUser({ name, email, password });
+
   };
 
   return (
@@ -39,7 +41,7 @@ const Register = ({ registerUser }) => {
           required
           autocomplete="off"
           placeholder="Official Email"
-          value={userData.email}
+          value={newUser.email}
           onChange={handleChange}/>
           <input
             type="text"
@@ -47,7 +49,7 @@ const Register = ({ registerUser }) => {
             required
             autocomplete="off"
             placeholder="Full Name"
-            value={userData.name}
+            value={newUser.name}
             onChange={handleChange}/>
           <input
             type="password"
@@ -55,7 +57,7 @@ const Register = ({ registerUser }) => {
             required
             autocomplete="off"
             placeholder="Password"
-            value={userData.password}
+            value={newUser.password}
             onChange={handleChange}/>
         <button type="submit" className="btn btn-primary">Register</button>
       </div>
@@ -63,5 +65,6 @@ const Register = ({ registerUser }) => {
     </React.Fragment>
   )
 }
+
 
 export default connect(null, { registerUser } )(Register);
